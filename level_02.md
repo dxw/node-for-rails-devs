@@ -22,8 +22,6 @@ app.get('/', function(req, res){
    res.send("Hello dxw!");
 });
 
-app.listen(3000);
-
 module.exports = { app };
 ```
 
