@@ -30,5 +30,5 @@ Your default `package.json` will have a `test` script defined. You can run this 
 
 ## More resources
 
-* JavaScript first steps: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps
-* Do Codeacademy's "Introduction to Node.js" course: https://www.codecademy.com/learn/learn-node-js/modules/introduction-to-node-js
+* JavaScript [first steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
+* Do Codeacademy's ["Introduction to Node.js" course](https://www.codecademy.com/learn/learn-node-js/modules/introduction-to-node-js)

@@ -95,6 +95,7 @@ Add a lint script to run `eslint`, and then `npm run lint` (because `lint` isn't
 
 ## More resources
 
-* Explore modern ES6 syntax with the Exercism Javascript track: https://exercism.io/my/tracks/javascript
-* Build a site in Node and Express: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
-* Read the Jest guides on how to test your apps: https://jestjs.io/docs/en/getting-started.html
+* Explore modern ES6 syntax with the [Exercism Javascript track](https://exercism.io/my/tracks/javascript)
+* Build a site in [Node and Express](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
+* Read the Jest guides on [how to test your apps](https://jestjs.io/docs/en/getting-started.html)
+* Learn about [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
