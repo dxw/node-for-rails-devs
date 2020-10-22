@@ -37,6 +37,20 @@ We make these two separate files so we can test the express app without starting
 
 Then you can run it with `npm start`, visit http://localhost:3000 and say hello.
 
+## Auto-restarting development server
+
+You're used to Rails looking out for you so that changes to source code are
+visible when you refresh the browser. You don't get this 'out of the box' with
+node. But, if you use the `nodemon` package you'll get this behaviour:
+
+1. install with `npm install nodemon --save-dev`
+
+2. change the `"start"` script in `package.json` to use nodemon rather than node to run `index.js`
+
+Now start the server with `npm start` and change the body of the homepage to "hello
+from dxw!", and observe that nodemon has detected the change to the filesystem
+and restarted express for you.
+
 ## Testing
 
 Let's prove it works. There are many options for testing in node, but in general the easiest and most full featured is [Jest](https://jestjs.io/).
