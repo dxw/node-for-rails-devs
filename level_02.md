@@ -45,7 +45,7 @@ Let's prove it works. There are many options for testing in node, but in general
 
 Note this adds jest as a dev dependency, not production.
 
-Change your `test` script to simply `jest`, and then run with `npm test`. It will run with no tests found, and thus fail.
+Edit the "scripts" property of your `package.json` so that you have a `"test": "jest"` entry, and then run with `npm test`. It will run with no tests found, and thus fail.
 
 ### Adding a test
 
