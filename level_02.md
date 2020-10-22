@@ -91,6 +91,46 @@ Create `.eslintrc.json`:
 
 Add a lint script to run `eslint`, and then `npm run lint` (because `lint` isn't one of the standard commands, you need the extra `run`).
 
+## BDD
+
+A more familiar "user first" way of describing the behaviour of our app is
+possible with the [cypress](https://www.cypress.io) library. There's a nice
+intro on this [wanago.io blog
+post](https://wanago.io/2019/12/30/javascript-testing-introduction-end-to-end-testing-cypress/).
+
+Cypress is a sophisticated test runner, which aims to replace Selenium. It builds on
+several testing libraries including Mocha and Chai and hooks into Chrome as its
+default driver, but can also run headless -- and lots more.
+
+1. install the package with `npm install cypress --save-dev`
+2. add a `"test:features": "cypress open"` script to `package.json`
+3. run `npm run test:features` to generate some files within a new `cypress` directory
+
+Let's describe the homepage in a way which is similar to using Capybara in Rails/RSpec:
+
+in `cypress/integration/homepage.spec.js`:
+
+```js
+describe('The home page', () => {
+  describe('visited for the first time', () => {
+    it('welcomes dxw staff', () => {
+      cy.visit('http://localhost:3000');
+
+      cy.get('body').should('contain.text', 'Hello DXW!');
+    });
+  });
+});
+````
+
+In the fancy UI which cypress provides in a Chrome window we see the rendered
+HTML on the right and the test output on the left:
+
+    Timed out retrying: expected '<body>' to contain text 'Hello DXW!', 
+    but the text was 'Hello dxw!'
+
+Nice. Notice that by default cypress is waiting for an interval to see if the
+DOM changes to the expected state.
+
 ## More resources
 
 * Explore modern ES6 syntax with the [Exercism Javascript track](https://exercism.io/my/tracks/javascript)
