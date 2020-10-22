@@ -89,7 +89,13 @@ Create `.eslintrc.json`:
 }
 ```
 
-Add a lint script to run `eslint`, and then `npm run lint` (because `lint` isn't one of the standard commands, you need the extra `run`).
+Add a lint script to `packages.json` to run `eslint`:
+
+```
+"lint": "eslint *.js"
+```
+
+and then `npm run lint` (because `lint` isn't one of the standard commands, you need the extra `run`).
 
 ## More resources
 
