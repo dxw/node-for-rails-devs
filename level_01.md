@@ -18,7 +18,7 @@ Set the Node version for a project in `.node-version` and `nodenv` will use it a
 
 ## NPM
 
-`npm` is the equivalent of `bundler`. `yarn` does the same job, and we could standardise on that - it has stronger locking of packages, which might be good.
+`npm` is the equivalent of `bundler`.
 
 `nodenv` will have installed the matching version of `npm` for you, but if you want to update it, you can always run `npm install --global npm@latest` to update it.
 
@@ -26,7 +26,7 @@ In a new directory you can then run `npm init` to create the `package.json`, whi
 
 ### Running scripts
 
-Your default `package.json` will have a `test` script defined. You can run this (and any other command you add to `scripts`) with `npm test`.
+Your default `package.json` will have a `test` script defined. You can run this (and any other command you add to `scripts`) with `npm run test` (or `npm test` for short in this case, as one of `npm`'s built in commands).
 
 ## More resources
 
