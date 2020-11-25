@@ -18,7 +18,7 @@ Set the node version for a project in `.nvmrc` and run `nvm use` to select it.
 
 ## NPM
 
-`npm` is the equivalent of `bundler`. `yarn` does the same job, but uses a different lockfile syntax.
+`npm` is the equivalent of `bundler`.
 
 nvm can help us make sure it's all good to go: `nvm install-latest-npm`
 
