@@ -78,11 +78,29 @@ const request = require('supertest');
 test('hello!', async () => {
   const response = await request(app).get('/')
   expect(response.status).toBe(200);
-  expect(response.text).toEqual("Hello dxw!");
+  expect(response.text).toEqual("Hello DXW!");
 });
 ```
 
-Run it, and it should pass!
+Run it (`npm test app.test.js`), and it should fail (as 'dxw' should be lowercase):
+
+```js
+expect(received).toEqual(expected) // deep equality
+
+Expected: "Hello DXW!"
+Received: "Hello dxw!"
+
+  5 |   const response = await request(app).get('/');
+  6 |   expect(response.status).toBe(200);
+> 7 |   expect(response.text).toEqual("Hello DXW!");
+    |                         ^
+  8 | });
+  9 |
+
+  at Object.<anonymous> (app.test.js:7:25)
+```
+
+Nice, we can see the problem clearly, fix it and move on...
 
 ## Code style
 
