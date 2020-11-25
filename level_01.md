@@ -26,7 +26,7 @@ In a new directory you can then run `npm init` to create the `package.json`, whi
 
 ### Running scripts
 
-Your default `package.json` will have a `test` script defined. You can run this (and any other command you add to `scripts`) with `npm test`.
+Your default `package.json` will have a `test` script defined. You can run this (and any other command you add to `scripts`) with `npm run test` (or `npm test` for short in this case, as one of `npm`'s built in commands).
 
 ## More resources
 
